@@ -1,0 +1,12 @@
+КАК ЗАПУСТИТЬ?
+
+1. Зайти в папку lib и открыть файл api.py, в переменную exchange_api поместить вот этот токен b33a1df50a2db68e651cdf9ad61079bc, в переменную token поместить токен
+от вашего телеграмм бота.
+2. pip install requeirements.txt либо pip3 install requeirements.txt
+3. Запуск python main.py, или через докер
+Если через докер, выполняем в корне папки, там где находится файл Dockerfile и выполняем следующие 2 комманды
+
+docker build -t exchange .
+docker run -d --restart=always exchange
+
+ГОТОВО)
