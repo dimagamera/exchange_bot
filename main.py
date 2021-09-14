@@ -11,7 +11,7 @@ bot = telebot.TeleBot(token)
 
 def send_welcome(message):
 	if message.text == '/start':
-		bot.send_message(message.chat.id, '*Что умеет данный бот?*\n\n */lst* - _показывать курс валют (CAD, RUS, UAH)_\n*/exchange* - _конвертировать валюту_(/exchange 100 UAH) -> (100$ в UAH)\n*/history* - _курс валюты за последние 7 дней_ (/history CAD)\n*Доступные валюты*: _UAH, RUS, CAD_\n*Базовая валюта*: USD', parse_mode="Markdown")
+		bot.send_message(message.chat.id, '*Что умеет данный бот?*\n\n */lst* - _показывать курс валют (CAD, RUB, UAH)_\n*/exchange* - _конвертировать валюту_(/exchange 100 UAH) -> (100$ в UAH)\n*/history* - _курс валюты за последние 7 дней_ (/history CAD)\n*Доступные валюты*: _UAH, RUS, CAD_\n*Базовая валюта*: USD', parse_mode="Markdown")
 	
 	elif message.text == '/lst':
 		res = time()
